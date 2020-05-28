@@ -1,0 +1,9 @@
+<div class="form">
+<input type="text" placeholder="Enter title" [(ngModel)]="title">
+<button (click)="onSubmit()">Search</button>
+</div>
+<div *ngIf="movie" class="card">
+    <h3>{{movie['Title']}}({{movie['Released']}})</h3>
+    <p>{{movie['Plot']}}</p>
+    <img src="{{movie['Poster']}}">
+</div>

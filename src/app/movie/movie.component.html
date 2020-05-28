@@ -1,0 +1,7 @@
+<div *ngIf="suggestions">
+    <h2>popular movie suggestions</h2>
+    <div *ngFor="let movie of suggestions" class="card">
+        <h3>{{movie['Title']}}({{movie['Released']}})</h3>
+        <img src="{{movie['Poster']}}">
+    </div>
+</div>
